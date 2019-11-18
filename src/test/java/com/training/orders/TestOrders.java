@@ -1,4 +1,4 @@
-package com.training.calculate;
+package com.training.orders;
 
 import java.util.ArrayList;
 import java.util.List;
