@@ -1,10 +1,11 @@
 package com.training.oddlength;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class with one method splice
+ * Class with one method splice that uses removeIf() 
+ * method of Collection interface
+ * 
  * @return Returns List of Strings
  * 
  * @author mnivedi1
@@ -13,8 +14,7 @@ import java.util.List;
 public class OddLengthSplicer {
 	
 	public List<String> splice(List<String> list){
-		List<String> result = new ArrayList<>();
-		list.forEach(word -> {if(word.length()%2 == 0) result.add(word);});
-		return result;
+		list.removeIf(word -> word.length()%2 != 0);
+		return list;
 	}
 }
